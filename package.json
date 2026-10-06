@@ -1,0 +1,18 @@
+{
+  "name": "welford-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Welford online variance backend (API + CLI)",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.test.json",
+    "start": "node dist/server.js",
+    "cli": "node dist/cli.js",
+    "demo": "node dist/demo.js",
+    "test": "npm run build && node --test dist-test/test/welford.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
+
